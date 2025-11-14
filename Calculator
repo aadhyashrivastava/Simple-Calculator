@@ -1,0 +1,48 @@
+#include <stdio.h>
+int main()
+{
+    char c;
+    int a,b,sum,sub,mul,div,rem;
+    printf("CALCULATOR;\n");
+    printf("Available options are:\n");
+    printf("1. Addition (+)\n");
+    printf("2. Subtraction (-)\n");
+    printf("3. Multiplication (*)\n");
+    printf("4. Division (/)\n");
+    printf("5. Modulus (%)\n");
+    printf("Select your operator:\n");
+    scanf("%c",&c);
+    switch(c)
+    {
+        case '+' : printf("Enter the numbers to be added:\n");
+                   scanf("%d%d",&a,&b);
+                   sum=a+b;
+                   printf("Sum is %d\n",sum);
+                   break;
+        case '-' : printf("Enter the numbers to be subtracted:\n");
+                   scanf("%d%d",&a,&b);
+                   sub= a-b;
+                   printf("Result is %d\n",sub);
+                   break;
+        case '*' : printf("Enter the numbers to be multiplied:\n");
+                   scanf("%d%d",&a,&b);
+                   mul = a*b;
+                   printf("Result is %d\n",mul);
+                   break;
+        case '/' : printf("Enter the numbers to be divided:\n");
+                   scanf("%d%d",&a,&b);
+                   div = a/b;
+                   printf("Result is %d\n",div);
+                   break;
+        case '%' : printf("Enter the numbers :\n");
+                   scanf("%d%d",&a,&b);
+                   rem = a%b;
+                   printf("Result is %d\n",rem);
+                   break;
+        default : printf("Invalid operator\n");
+                  break;
+    }
+    printf("Keep calculating;\n");
+    return 0;
+    
+}
